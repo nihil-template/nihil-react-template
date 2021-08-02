@@ -41,5 +41,7 @@ module.exports = {
         extensions: [ '.js', '.jsx', '.ts', '.tsx' ],
       },
     ],
+  
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
 };
