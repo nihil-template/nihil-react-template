@@ -1,23 +1,16 @@
 import React, { useCallback } from 'react';
-import { useRecoilState } from 'recoil';
 import { css } from '@emotion/react';
-import { Word } from '@/atoms/Word';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState, AppDispatch } from '@/store/store';
+import { ChangeWord } from '@/reducers/TestReducer';
 
 const App = () => {
-  const [ word, setWord, ] = useRecoilState(Word);
+  const word = useSelector((rootState: RootState) => rootState.test.word);
+  const dispatch = useDispatch<AppDispatch>();
   
   const onClickButton = useCallback(() => {
-    switch (word) {
-      case 'JavaScript':
-        setWord('TypeScript');
-        break;
-      case 'TypeScript':
-        setWord('JavaScript');
-        break;
-      default:
-        break;
-    }
-  }, [setWord, word]);
+    dispatch(ChangeWord());
+  }, [word]);
   
   const style = css`
     color: #ffffff;

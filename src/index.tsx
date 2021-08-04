@@ -1,11 +1,14 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 
 import App from '@/App';
-import { RecoilRoot } from 'recoil';
+import { store } from '@/store/store';
 
-render((
-  <RecoilRoot>
+const ReduxApp = (
+  <Provider store={store}>
     <App />
-  </RecoilRoot>
-), document.querySelector('#root'));
+  </Provider>
+);
+
+render(ReduxApp, document.querySelector('#root'));

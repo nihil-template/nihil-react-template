@@ -27,7 +27,8 @@ const config: Configuration = {
       '@/utils': path.resolve(__dirname, 'src/utils/'),
       '@/data': path.resolve(__dirname, 'src/data/'),
       '@/layouts': path.resolve(__dirname, 'src/layouts/'),
-      '@/atoms': path.resolve(__dirname, 'src/atoms/'),
+      '@/actions': path.resolve(__dirname, 'src/actions/'),
+      '@/types': path.resolve(__dirname, 'src/types/'),
     },
   },
   module: {

@@ -17,7 +17,8 @@
       "@/utils/*": ["./src/utils/*"],
       "@/data/*": ["./src/data/*"],
       "@/layouts/*": ["./src/layouts/*"],
-      "@/atoms/*": ["./src/atoms/*"]
+      "@/actions/*": ["./src/actions/*"],
+      "@/types/*": ["./src/types/*"]
     }
   },
   "include": [ "./src/**/*" ],
