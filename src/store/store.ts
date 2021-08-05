@@ -9,13 +9,3 @@ export const store = configureStore({
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
-
-// import { createStore, applyMiddleware } from 'redux';
-// import MainReducer from '@/reducers/MainReducer';
-// import thunk from 'redux-thunk';
-//
-// export const Store = createStore(
-//   MainReducer,
-//   {},
-//   applyMiddleware(thunk),
-// );
