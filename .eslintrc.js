@@ -62,6 +62,7 @@ module.exports = {
     // 임포트 규칙
     'import/extensions': [ 'error', 'ignorePackages', {
       js: 'never',
+      jsx: 'never',
       ts: 'never',
       tsx: 'never',
     }, ],
