@@ -48,7 +48,7 @@ module.exports = {
     ],
     'object-curly-spacing': [ 'warn', 'always', ],
     'no-shadow': 'off',
-    indent: [ 'warn', 2, ],
+    indent: [ 'warn', 2, { SwitchCase: 1, }, ],
     'comma-dangle': [ 'warn', {
       arrays: 'always',
       functions: 'never',
