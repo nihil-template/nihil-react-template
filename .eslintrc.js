@@ -4,7 +4,7 @@ module.exports = {
     browser: true,
     commonjs: true,
     node: true,
-    es6: true,
+    es2021: true,
   },
   parser: '@typescript-eslint/parser',
   extends: [
@@ -19,6 +19,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   plugins: [ '@typescript-eslint', 'import', 'react', 'react-hooks', ],
   rules: {
