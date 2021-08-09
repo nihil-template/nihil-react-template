@@ -63,12 +63,7 @@ module.exports = {
     'linebreak-style': 'off',
 
     // 임포트 규칙
-    'import/extensions': [ 'error', 'ignorePackages', {
-      js: 'never',
-      jsx: 'never',
-      ts: 'never',
-      tsx: 'never',
-    }, ],
+    'import/extensions': [ 'error', 'never', { ignorePackages: true, }, ],
     'import/no-extraneous-dependencies': 'off',
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
