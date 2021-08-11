@@ -61,9 +61,15 @@ module.exports = {
     }, ],
     'jsx-quotes': [ 'error', 'prefer-single', ],
     'linebreak-style': 'off',
+    'max-len': 'off',
 
     // 임포트 규칙
-    'import/extensions': [ 'error', 'never', { ignorePackages: true, }, ],
+    'import/extensions': [ 'error', 'never', {
+      ignorePackages: true,
+      pattern: {
+        json: 'always',
+      },
+    }, ],
     'import/no-extraneous-dependencies': 'off',
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
