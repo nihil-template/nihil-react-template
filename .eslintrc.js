@@ -23,7 +23,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [ '@typescript-eslint', 'import', 'react', 'react-hooks', ],
+  plugins: [ '@typescript-eslint', 'import', 'react', 'react-hooks', 'html', ],
   rules: {
     // 일반 규칙
     'no-console': 'off',
@@ -64,7 +64,7 @@ module.exports = {
     'max-len': 'off',
     'lines-between-class-members': 'off',
     'no-underscore-dangle': 'off',
-    
+
     // 임포트 규칙
     'import/extensions': [ 'error', 'never', {
       ignorePackages: true,
@@ -75,7 +75,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
-    
+
     // 리액트 규칙
     'react/jsx-props-no-spreading': 'off',
     'react/forbid-prop-types': 'off',
@@ -90,10 +90,10 @@ module.exports = {
     'react/require-default-props': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/display-name': 'off',
-    
+
     // 리액트 훅스 규칙
     'react-hooks/exhaustive-deps': 'off',
-    
+
     // jsx 규칙
     'jsx-a11y/anchor-is-valid': [
       'error',
@@ -106,7 +106,7 @@ module.exports = {
     'jsx-a11y/anchor-has-content': 'off',
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
-    
+
     // 타입스크립트 규칙
     '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
