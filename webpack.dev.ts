@@ -63,21 +63,29 @@ const config: Configuration = {
     ],
   },
   plugins: [
-    new ReactRefreshPlugin(),
+    new ReactRefreshPlugin({
+      overlay: false,
+    }),
     new ForkTsCheckerWebpackPlugin(),
   ],
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'build'),
+    publicPath: '/build',
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.join(__dirname, '/'),
-    publicPath: '/build/',
-    overlay: true,
+    devMiddleware: {
+      publicPath: '/build',
+    },
+    static: {
+      directory: path.resolve(__dirname),
+    },
+    client: {
+      overlay: true,
+    },
     port: 3000,
     hot: true,
-    open: true,
   },
 };
 
