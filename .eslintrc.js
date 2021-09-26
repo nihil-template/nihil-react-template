@@ -65,6 +65,10 @@ module.exports = {
     'max-len': 'off',
     'no-else-return': 'off',
     'global-require': 'off',
+    'class-methods-use-this': 'off',
+    'no-useless-constructor': 'off',
+    'no-useless-return': 'off',
+    'lines-between-class-members': 'off',
 
     // 임포트 규칙
     'import/extensions': 'off',
@@ -104,7 +108,10 @@ module.exports = {
     'jsx-a11y/click-events-have-key-events': 'off',
 
     // 타입스크립트 규칙
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
