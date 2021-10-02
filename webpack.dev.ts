@@ -28,6 +28,7 @@ const config: Configuration = {
       '@/data': path.resolve(__dirname, 'src/data/'),
       '@/layouts': path.resolve(__dirname, 'src/layouts/'),
       '@/actions': path.resolve(__dirname, 'src/actions/'),
+      '@/pages': path.resolve(__dirname, 'src/pages/'),
       '@/types': path.resolve(__dirname, 'src/types/'),
     },
   },
