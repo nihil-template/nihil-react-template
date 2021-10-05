@@ -1,16 +1,16 @@
 {
-  "name": "nihil-react-typescript-template",
+  "name": "nihil-react-template",
   "version": "1.0.0",
-  "description": "리액트랑 타입스크립트 편하게 하려고 만든 템플릿",
+  "description": "리액트 편하게 쓰려고 만든 템플릿. 타입스크립트 기본 지원.",
   "main": "src/index.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NIHILncunia/nihil-react-typescript-template.git"
+    "url": "git+https://github.com/NIHILncunia/nihil-react-template.git"
   },
   "bugs": {
-    "url": "https://github.com/NIHILncunia/nihil-react-typescript-template/issues"
+    "url": "https://github.com/NIHILncunia/nihil-react-template/issues"
   },
-  "homepage": "https://github.com/NIHILncunia/nihil-react-typescript-template#readme",
+  "homepage": "https://github.com/NIHILncunia/nihil-react-template#readme",
   "scripts": {
     "serve": "webpack serve --config webpack.dev.ts",
     "prod": "webpack --config webpack.prod.ts"
