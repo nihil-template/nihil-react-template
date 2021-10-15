@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
-import { RootState, AppDispatch } from '@/store/store';
+import { RootState, AppDispatch } from '@/store';
 import { ChangeWord } from '@/reducers/TestReducer';
 
 const App = ({ location, }: RouteComponentProps) => {
@@ -30,6 +30,11 @@ const App = ({ location, }: RouteComponentProps) => {
       <p>
         <Link to='/test'>
           테스트 페이지
+        </Link>
+      </p>
+      <p>
+        <Link to='/test/test'>
+          테스트테스트 페이지
         </Link>
       </p>
     </>
