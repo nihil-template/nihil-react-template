@@ -1,14 +1,16 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import { Link, RouteComponentProps } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const TestTestPage = ({ location, }: RouteComponentProps) => {
+const TestTestPage = () => {
   const style = css`
     color: #ffffff;
     background-color: #333333;
     padding: 10px;
     margin-bottom: 10px;
   `;
+
+  const location = useLocation();
 
   return (
     <>

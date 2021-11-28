@@ -90,6 +90,11 @@ module.exports = {
     ],
     'react/require-default-props': 'off',
     'react/jsx-one-expression-per-line': 'off',
+    'react/function-component-definition': 'off',
+    'react/jsx-no-useless-fragment': 'off',
+    'react/no-arrow-function-lifecycle': 'off',
+    'react/no-invalid-html-attribute': 'off',
+    'react/no-unused-class-component-methods': 'off',
 
     // 리액트 훅스 규칙
     'react-hooks/exhaustive-deps': 'off',
@@ -116,6 +121,11 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/indent': [ 'warn', 2, { SwitchCase: 1, }, ],
+    '@typescript-eslint/indent': [ 'warn', 2, {
+      SwitchCase: 1,
+      FunctionExpression: {
+        parameters: 0,
+      },
+    }, ],
   },
 };

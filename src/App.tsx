@@ -1,18 +1,19 @@
 import React, { useCallback } from 'react';
 import { css } from '@emotion/react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RouteComponentProps } from 'react-router';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { RootState, AppDispatch } from '@/store';
 import { ChangeWord } from '@/reducers/TestReducer';
 
-const App = ({ location, }: RouteComponentProps) => {
+const App = () => {
   const word = useSelector((rootState: RootState) => rootState.test.word);
   const dispatch = useDispatch<AppDispatch>();
 
   const onClickButton = useCallback(() => {
     dispatch(ChangeWord());
   }, [ word, ]);
+
+  const location = useLocation();
 
   const style = css`
     color: #ffffff;
