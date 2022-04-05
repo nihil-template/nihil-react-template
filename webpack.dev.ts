@@ -87,7 +87,6 @@ const config: Configuration = {
     },
     port: 3000,
     hot: true,
-    open: true,
   },
 };
 
