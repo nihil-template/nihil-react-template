@@ -79,6 +79,26 @@ module.exports = {
     'import/no-dynamic-require': 'off',
     'import/prefer-default-export': 'off',
 
+    // 타입스크립트 규칙
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/indent': [ 'warn', 2, {
+      SwitchCase: 1,
+      FunctionExpression: {
+        parameters: 1,
+      },
+      ignoredNodes: [
+        'FunctionExpression > .params[decorators.length > 0]',
+        'FunctionExpression > .params > :matches(Decorator, :not(:first-child))',
+        'ClassBody.body > PropertyDefinition[decorators.length > 0] > .key',
+      ],
+    }, ],
+
     // 리액트 규칙
     'react/jsx-props-no-spreading': 'off',
     'react/forbid-prop-types': 'off',
@@ -115,25 +135,5 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
-
-    // 타입스크립트 규칙
-    '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/ban-ts-comment': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/indent': [ 'warn', 2, {
-      SwitchCase: 1,
-      FunctionExpression: {
-        parameters: 1,
-      },
-      ignoredNodes: [
-        'FunctionExpression > .params[decorators.length > 0]',
-        'FunctionExpression > .params > :matches(Decorator, :not(:first-child))',
-        'ClassBody.body > PropertyDefinition[decorators.length > 0] > .key',
-      ],
-    }, ],
   },
 };
