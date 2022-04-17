@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from '@/App';
@@ -19,4 +19,5 @@ const ReduxApp = (
   </Provider>
 );
 
-render(ReduxApp, document.querySelector('#root'));
+const root = createRoot(document.querySelector('#root'));
+root.render(ReduxApp);
